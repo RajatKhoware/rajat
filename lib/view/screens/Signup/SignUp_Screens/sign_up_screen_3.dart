@@ -26,29 +26,34 @@ class _NewSignUpScreen2State extends State<NewSignUpScreen3> {
 
   @override
   Widget build(BuildContext context) {
-   
     return
-    //  ScreenUtilInit(
-    //     builder: (context, child) =>
-         Scaffold(
-            body:
-                // Stack(
-                //   children: <Widget>[
-                //     SizedBox.expand(
-                //       child: FittedBox(
-                //         fit: BoxFit.cover,
-                //         child: SizedBox(
-                //           // width: _controller.value.size.width,
-                //           // height: _controller.value.size.height,
-                //           // child: VideoPlayer(_controller),
-                //         ),
-                //       ),
-                //     ),
-                //     Padding(
-                //       padding: EdgeInsets.only(
-                //           top: 512.h, bottom: 30.h, left: 10.h, right: 10.h),
-                // child:
-                SignUpCard4(userName: widget.userName,mobile: "",));
+        //  ScreenUtilInit(
+        //     builder: (context, child) =>
+        Scaffold(
+      body: Stack(
+        children: <Widget>[
+          SizedBox.expand(
+            child: FittedBox(
+              fit: BoxFit.cover,
+              child: SizedBox(
+                // width: _controller.value.size.width,
+                // height: _controller.value.size.height,
+                // child: VideoPlayer(_controller),
+                child: Image.asset("assets/gifs/part_4.gif"),
+              ),
+            ),
+          ),
+          SizedBox.expand(
+            child: Padding(
+                padding: EdgeInsets.only(bottom: 10, left: 15, right: 15),
+                child: SignUpCard4(
+                  userName: widget.userName,
+                  mobile: "",
+                )),
+          )
+        ],
+      ),
+    );
     //         ),
     //       ],
     //     ),

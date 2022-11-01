@@ -38,6 +38,7 @@ class _SignUpStartState extends State<SignUpStart> {
                   // width: _controller.value.size.width,
                   // height: _controller.value.size.height,
                   // child: VideoPlayer(_controller),
+                  child: Image.asset("assets/gifs/part_1.gif"),
                 ),
               ),
             ),

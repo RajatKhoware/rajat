@@ -64,7 +64,7 @@ class _OTPPageState extends State<OTPPage> with BaseClass {
           child: Column(
             children: [
               //adding the infographic
-              // const Image(image: AssetImage('assets/videos/info4.gif')),
+              // const Image(image: AssetImage('assets/gifs/part_4.gif')),
               Expanded(child: Container()),
               Container(
                 padding:

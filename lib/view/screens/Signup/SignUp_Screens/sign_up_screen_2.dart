@@ -40,32 +40,34 @@ class _NewSignUpScreen2State extends State<NewSignUpScreen2> {
         // ScreenUtilInit(
         // builder: (context, child) =>
         Scaffold(
-      body:
-          // SizedBox(
-          //   height: double.infinity,
-          // child: Stack(
-          //   children: <Widget>[
-          // SizedBox.expand(
-          //   child: FittedBox(
-          //     fit: BoxFit.cover,
-          //     child: SizedBox(
-          // width: _controller.value.size.width,
-          // height: _controller.value.size.height,
-          // child: VideoPlayer(_controller),
-          //     ),
-          //   ),
-          // ),
+      body: Stack(
+        children: <Widget>[
+          SizedBox.expand(
+            child: FittedBox(
+              fit: BoxFit.cover,
+              child: SizedBox(
+                // width: _controller.value.size.width,
+                // height: _controller.value.size.height,
+                // child: VideoPlayer(_controller),
+                child: Image.asset("assets/gifs/part_2.gif"),
+              ),
+            ),
+          ),
           Container(
-        // margin: EdgeInsets.only(top: 368.h),
-        height: double.infinity,
-        alignment: Alignment.bottomCenter,
-        child: SignUpCard2(userName: args.userName),
+            height: double.infinity,
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: EdgeInsets.only(bottom: 10, left: 15, right: 15),
+              child: SignUpCard2(userName: args.userName),
+            ),
+          ),
+          // Padding(
+          //   padding: EdgeInsets.only(
+          //       top: 300.h, bottom: 30.h, left: 15.w, right: 15.w),
+          //   child: SignUpCard1(),
+          // ),
+        ],
       ),
-
-      // ],
-      // ),
-      // ),
-      // ),
       // designSize: const Size(428, 926),
     );
   }

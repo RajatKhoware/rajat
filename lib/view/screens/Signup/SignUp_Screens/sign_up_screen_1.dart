@@ -32,20 +32,32 @@ class _NewSignUpScreenState extends State<NewSignUpScreen> {
         // ScreenUtilInit(
         //   builder: (context, child) =>
         Scaffold(
-      body:
-          // Stack(
-          //   children: <Widget>[
-          //     SizedBox.expand(
-          //       child: FittedBox(
-          //         fit: BoxFit.cover,
-          //         child: SizedBox(
-          //           // width: _controller.value.size.width,
-          //           // height: _controller.value.size.height,
-          //           // child: VideoPlayer(_controller),
-          //         ),
-          //       ),
-          //     ),
-          SignUpCard1(),
+      body: Stack(
+        children: <Widget>[
+          SizedBox.expand(
+            child: FittedBox(
+              fit: BoxFit.cover,
+              child: SizedBox(
+                // width: _controller.value.size.width,
+                // height: _controller.value.size.height,
+                // child: VideoPlayer(_controller),
+                child: Image.asset("assets/gifs/part_2.gif"),
+              ),
+            ),
+          ),
+          SizedBox.expand(
+            child: Padding(
+              padding: EdgeInsets.only(bottom: 10, left: 15, right: 15),
+              child: SignUpCard1(),
+            ),
+          )
+          // Padding(
+          //   padding: EdgeInsets.only(
+          //       top: 300.h, bottom: 30.h, left: 15.w, right: 15.w),
+          //   child: SignUpCard1(),
+          // ),
+        ],
+      ),
     );
     //     ],
     //   ),

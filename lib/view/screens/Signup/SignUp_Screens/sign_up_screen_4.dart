@@ -49,6 +49,7 @@ class _NewSignUpScreen2State extends State<NewSignUpScreen4> {
                     // width: _controller.value.size.width,
                     // height: _controller.value.size.height,
                     // child: VideoPlayer(_controller),
+                     child: Image.asset("assets/gifs/part_5.gif"),
                     ),
               ),
             ),

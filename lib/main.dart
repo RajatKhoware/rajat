@@ -3,7 +3,7 @@ import 'package:tambola_frontend/models/user.dart';
 import 'package:tambola_frontend/view/constants/export_main.dart';
 import 'package:tambola_frontend/view/screens/support/presentation/screens/customer_support.dart';
 
-Widget _initialHomeRoute = const SplashScreen();
+Widget _initialHomeRoute = const SignUpStart();
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
 void main() async {
